@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="index.js"></script>
+    <title>Calculadora</title>
+</head>
+<body>
+    <div class="container-geral">
+        <div class="container-calculadora">
+            <form>
+                <div class="container-resultado">
+                    <input type="text" name="resultado" id="resultado" value="" disabled="" >
+                </div>
+                <div class="inputs">
+                    <input type="button" name="numero1" id="numero1" onclick="guardarValor('numero1')" value="1">
+                    <input type="button" name="numero2" id="numero2" onclick="guardarValor('numero2')" value="2">
+                    <input type="button" name="numero3" id="numero3" onclick="guardarValor('numero3')" value="3">
+                    <input type="button" name="numeroC" id="numeroC" onclick="apagarNumero()" value="C">
+                    <input type="button" name="numero4" id="numero4" onclick="guardarValor('numero4')" value="4">
+                    <input type="button" name="numero5" id="numero5" onclick="guardarValor('numero5')" value="5">
+                    <input type="button" name="numero6" id="numero6" onclick="guardarValor('numero6')" value="6">
+                    <input type="button" name="numeroDiv" id="numeroDiv" onclick="guardarOperadores('numeroDiv')" value="/">
+                    <input type="button" name="numero7" id="numero7" onclick="guardarValor('numero7')" value="7">
+                    <input type="button" name="numero8" id="numero8" onclick="guardarValor('numero8')" value="8">
+                    <input type="button" name="numero9" id="numero9" onclick="guardarValor('numero9')" value="9">
+                    <input type="button" name="numeroMulti" id="numeroMulti" onclick="guardarOperadores('numeroMulti')" value="*">
+                    <input type="button" name="numero0" id="numero0" onclick="guardarZero()" value="0">
+                    <input type="button" name="numeroIgual" id="numeroIgual" onclick="resultadoOperacao()" value="=">
+                    <input type="button" name="umeroMais" id="numeroMais" onclick="guardarOperadores('numeroMais')" value="+">
+                    <input type="button" name="numeroMenos" id="numeroMenos" onclick="guardarOperadores('numeroMenos')" value="-">
+                </div>
+            </form>
+        </div>
+        <div class="container-tabela">
+            <table id="tabela">
+            </table>
+        </div>
+    </div>
+</body>
+</html>

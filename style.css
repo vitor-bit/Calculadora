@@ -1,0 +1,704 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    -webkit-font-smoothing: none;
+}
+
+body {
+    background-color: #ff9f8e;
+}
+
+@media (max-width: 480px) {
+    .container-calculadora {
+        display: flex;
+        justify-content: center;
+        margin-top: 7rem;
+        border-radius: 0.75rem;
+    }
+
+    #resultado {
+        text-align: right;
+        height: 2.5rem;
+        width: 9rem;
+        margin: 0.2rem 0.5rem 0.5rem 0.5rem;
+        padding-right: 0.5rem;
+        background-color: #ffcfa2;
+        border-radius: 0.20rem;
+        border: none;
+        font-size: 1.3rem;
+        color: black;
+    }
+
+    form {
+        border: 0.4rem #fffccb solid;
+        background-color: #fffccb;
+        border-radius: 0.20rem;
+    }
+
+    .inputs {
+        display: grid;
+        justify-content: center;
+        grid-template-rows: 2.5rem 2.5rem 2.5rem 2.5rem;
+        grid-template-columns: 2.5rem 2.5rem 2.5rem 2.5rem;
+    }
+
+    #numero1,
+    #numero2,
+    #numero3,
+    #numeroC,
+    #numero4,
+    #numero5,
+    #numero6,
+    #numeroDiv,
+    #numero7,
+    #numero8,
+    #numero9,
+    #numeroMulti,
+    #numero0,
+    #numeroIgual,
+    #numeroMais,
+    #numeroMenos {
+        border: 0.2rem #fffccb solid;
+        border-radius: 0.20rem;
+        background-color: #ffcfa2;
+        font-size: 1.3rem;
+    }
+
+    #numero1:hover,
+    #numero2:hover,
+    #numero3:hover,
+    #numeroC:hover,
+    #numero4:hover,
+    #numero5:hover,
+    #numero6:hover,
+    #numeroDiv:hover,
+    #numero7:hover,
+    #numero8:hover,
+    #numero9:hover,
+    #numeroMulti:hover,
+    #numero0:hover,
+    #numeroIgual:hover,
+    #numeroMais:hover,
+    #numeroMenos:hover {
+        cursor: pointer;
+        color: #ff9f8e;
+        transition: 0.3s;
+    }
+
+    #numero1:active,
+    #numero2:active,
+    #numero3:active,
+    #numeroC:active,
+    #numero4:active,
+    #numero5:active,
+    #numero6:active,
+    #numeroDiv:active,
+    #numero7:active,
+    #numero8:active,
+    #numero9:active,
+    #numeroMulti:active,
+    #numero0:active,
+    #numeroIgual:active,
+    #numeroMais:active,
+    #numeroMenos:active {
+        cursor: pointer;
+        background-color: #fffccb;
+        transition: none;
+        color: #ff9f8e;
+    }
+
+    .container-tabela {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2.6rem;
+    }
+
+    td {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #fffccb;
+        width: 9rem;
+        height: 2rem;
+        border: 0.2rem #ffcfa2 solid;
+        font-size: 0.85rem;
+    }
+
+    tr {
+        display: flex;
+    }
+
+    .input-td {
+        background: none;
+        border: none;
+        font-size: 0.85rem;
+    }
+
+    .input-td:hover {
+        cursor: pointer;
+        color: #ff9f8e;
+        transition: 0.3s;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    .container-calculadora {
+        display: flex;
+        justify-content: center;
+        margin-top: 7rem;
+        border-radius: 0.75rem;
+    }
+
+    #resultado {
+        text-align: right;
+        height: 2.5rem;
+        width: 10rem;
+        margin: 0.2rem 0.5rem 0.5rem 0.5rem;
+        padding-right: 0.5rem;
+        background-color: #ffcfa2;
+        border-radius: 0.20rem;
+        border: none;
+        font-size: 1.5rem;
+        color: black;
+    }
+
+    form {
+        border: 0.4rem #fffccb solid;
+        background-color: #fffccb;
+        border-radius: 0.20rem;
+    }
+
+    .inputs {
+        display: grid;
+        justify-content: center;
+        grid-template-rows: 2.8rem 2.8rem 2.8rem 2.8rem;
+        grid-template-columns: 2.8rem 2.8rem 2.8rem 2.8rem;
+    }
+
+    #numero1,
+    #numero2,
+    #numero3,
+    #numeroC,
+    #numero4,
+    #numero5,
+    #numero6,
+    #numeroDiv,
+    #numero7,
+    #numero8,
+    #numero9,
+    #numeroMulti,
+    #numero0,
+    #numeroIgual,
+    #numeroMais,
+    #numeroMenos {
+        border: 0.2rem #fffccb solid;
+        border-radius: 0.20rem;
+        background-color: #ffcfa2;
+        font-size: 1.5rem;
+    }
+
+    #numero1:hover,
+    #numero2:hover,
+    #numero3:hover,
+    #numeroC:hover,
+    #numero4:hover,
+    #numero5:hover,
+    #numero6:hover,
+    #numeroDiv:hover,
+    #numero7:hover,
+    #numero8:hover,
+    #numero9:hover,
+    #numeroMulti:hover,
+    #numero0:hover,
+    #numeroIgual:hover,
+    #numeroMais:hover,
+    #numeroMenos:hover {
+        cursor: pointer;
+        color: #ff9f8e;
+        transition: 0.3s;
+    }
+
+    #numero1:active,
+    #numero2:active,
+    #numero3:active,
+    #numeroC:active,
+    #numero4:active,
+    #numero5:active,
+    #numero6:active,
+    #numeroDiv:active,
+    #numero7:active,
+    #numero8:active,
+    #numero9:active,
+    #numeroMulti:active,
+    #numero0:active,
+    #numeroIgual:active,
+    #numeroMais:active,
+    #numeroMenos:active {
+        cursor: pointer;
+        background-color: #fffccb;
+        transition: none;
+        color: #ff9f8e;
+    }
+
+    .container-tabela {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2.6rem;
+    }
+
+    td {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #fffccb;
+        width: 11rem;
+        height: 2.5rem;
+        border: 0.2rem #ffcfa2 solid;
+        font-size: 1rem;
+    }
+
+    tr {
+        display: flex;
+    }
+
+    .input-td {
+        background: none;
+        border: none;
+        font-size: 1rem;
+        padding-right: 0.5rem;
+    }
+
+    .input-td:hover {
+        cursor: pointer;
+        color: #ff9f8e;
+        transition: 0.3s;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .container-geral {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 11rem;
+    }
+
+    .container-calculadora {
+        display: flex;
+        justify-content: center;
+        border-radius: 0.75rem;
+    }
+
+    #resultado {
+        text-align: right;
+        height: 2.5rem;
+        width: 10rem;
+        margin: 0.2rem 0.5rem 0.5rem 0.5rem;
+        padding-right: 0.5rem;
+        background-color: #ffcfa2;
+        border-radius: 0.20rem;
+        border: none;
+        font-size: 1.5rem;
+        color: black;
+    }
+
+    form {
+        border: 0.4rem #fffccb solid;
+        background-color: #fffccb;
+        border-radius: 0.20rem;
+    }
+
+    .inputs {
+        display: grid;
+        justify-content: center;
+        grid-template-rows: 2.8rem 2.8rem 2.8rem 2.8rem;
+        grid-template-columns: 2.8rem 2.8rem 2.8rem 2.8rem;
+    }
+
+    #numero1,
+    #numero2,
+    #numero3,
+    #numeroC,
+    #numero4,
+    #numero5,
+    #numero6,
+    #numeroDiv,
+    #numero7,
+    #numero8,
+    #numero9,
+    #numeroMulti,
+    #numero0,
+    #numeroIgual,
+    #numeroMais,
+    #numeroMenos {
+        border: 0.2rem #fffccb solid;
+        border-radius: 0.20rem;
+        background-color: #ffcfa2;
+        font-size: 1.5rem;
+    }
+
+    #numero1:hover,
+    #numero2:hover,
+    #numero3:hover,
+    #numeroC:hover,
+    #numero4:hover,
+    #numero5:hover,
+    #numero6:hover,
+    #numeroDiv:hover,
+    #numero7:hover,
+    #numero8:hover,
+    #numero9:hover,
+    #numeroMulti:hover,
+    #numero0:hover,
+    #numeroIgual:hover,
+    #numeroMais:hover,
+    #numeroMenos:hover {
+        cursor: pointer;
+        color: #ff9f8e;
+        transition: 0.3s;
+    }
+
+    #numero1:active,
+    #numero2:active,
+    #numero3:active,
+    #numeroC:active,
+    #numero4:active,
+    #numero5:active,
+    #numero6:active,
+    #numeroDiv:active,
+    #numero7:active,
+    #numero8:active,
+    #numero9:active,
+    #numeroMulti:active,
+    #numero0:active,
+    #numeroIgual:active,
+    #numeroMais:active,
+    #numeroMenos:active {
+        cursor: pointer;
+        background-color: #fffccb;
+        transition: none;
+        color: #ff9f8e;
+    }
+
+    .container-tabela {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 3rem;
+    }
+
+    td {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #fffccb;
+        width: 11rem;
+        height: 2.5rem;
+        border: 0.2rem #ffcfa2 solid;
+        font-size: 1rem;
+    }
+
+    tr {
+        display: flex;
+    }
+
+    .input-td {
+        background: none;
+        border: none;
+        font-size: 1rem;
+        padding-right: 0.5rem;
+    }
+
+    .input-td:hover {
+        cursor: pointer;
+        color: #ff9f8e;
+        transition: 0.3s;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1200px) {
+    .container-geral {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 11rem;
+    }
+
+    .container-calculadora {
+        display: flex;
+        justify-content: center;
+        border-radius: 0.75rem;
+    }
+
+    #resultado {
+        text-align: right;
+        height: 2.5rem;
+        width: 12rem;
+        height: 3rem;
+        margin: 0.2rem 0.5rem 0.5rem 0.5rem;
+        padding-right: 0.5rem;
+        background-color: #ffcfa2;
+        border-radius: 0.20rem;
+        border: none;
+        font-size: 1.7rem;
+        color: black;
+    }
+
+    form {
+        border: 0.4rem #fffccb solid;
+        background-color: #fffccb;
+        border-radius: 0.20rem;
+    }
+
+    .inputs {
+        display: grid;
+        justify-content: center;
+        grid-template-rows: 3.2rem 3.2rem 3.2rem 3.2rem;
+        grid-template-columns: 3.2rem 3.2rem 3.2rem 3.2rem;
+    }
+
+    #numero1,
+    #numero2,
+    #numero3,
+    #numeroC,
+    #numero4,
+    #numero5,
+    #numero6,
+    #numeroDiv,
+    #numero7,
+    #numero8,
+    #numero9,
+    #numeroMulti,
+    #numero0,
+    #numeroIgual,
+    #numeroMais,
+    #numeroMenos {
+        border: 0.2rem #fffccb solid;
+        border-radius: 0.20rem;
+        background-color: #ffcfa2;
+        font-size: 1.8rem;
+    }
+
+    #numero1:hover,
+    #numero2:hover,
+    #numero3:hover,
+    #numeroC:hover,
+    #numero4:hover,
+    #numero5:hover,
+    #numero6:hover,
+    #numeroDiv:hover,
+    #numero7:hover,
+    #numero8:hover,
+    #numero9:hover,
+    #numeroMulti:hover,
+    #numero0:hover,
+    #numeroIgual:hover,
+    #numeroMais:hover,
+    #numeroMenos:hover {
+        cursor: pointer;
+        color: #ff9f8e;
+        transition: 0.3s;
+    }
+
+    #numero1:active,
+    #numero2:active,
+    #numero3:active,
+    #numeroC:active,
+    #numero4:active,
+    #numero5:active,
+    #numero6:active,
+    #numeroDiv:active,
+    #numero7:active,
+    #numero8:active,
+    #numero9:active,
+    #numeroMulti:active,
+    #numero0:active,
+    #numeroIgual:active,
+    #numeroMais:active,
+    #numeroMenos:active {
+        cursor: pointer;
+        background-color: #fffccb;
+        transition: none;
+        color: #ff9f8e;
+    }
+
+    .container-tabela {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 3rem;
+    }
+
+    td {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #fffccb;
+        width: 12rem;
+        height: 2.5rem;
+        border: 0.2rem #ffcfa2 solid;
+        font-size: 1.1rem;
+    }
+
+    tr {
+        display: flex;
+    }
+
+    .input-td {
+        background: none;
+        border: none;
+        font-size: 1.1rem;
+        padding-right: 0.5rem;
+    }
+
+    .input-td:hover {
+        cursor: pointer;
+        color: #ff9f8e;
+        transition: 0.3s;
+    }
+}
+
+@media (min-width: 1201px) {
+    .container-geral {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 11rem;
+    }
+
+    .container-calculadora {
+        display: flex;
+        justify-content: center;
+        border-radius: 0.75rem;
+    }
+
+    #resultado {
+        text-align: right;
+        height: 2.5rem;
+        width: 14.5rem;
+        height: 3.6rem;
+        margin: 0.2rem 0.5rem 0.5rem 0.5rem;
+        padding-right: 0.8rem;
+        background-color: #ffcfa2;
+        border-radius: 0.20rem;
+        border: none;
+        font-size: 2.1rem;
+        color: black;
+    }
+
+    form {
+        border: 0.4rem #fffccb solid;
+        background-color: #fffccb;
+        border-radius: 0.20rem;
+    }
+
+    .inputs {
+        display: grid;
+        justify-content: center;
+        grid-template-rows: 3.8rem 3.8rem 3.8rem 3.8rem;
+        grid-template-columns: 3.8rem 3.8rem 3.8rem 3.8rem;
+    }
+
+    #numero1,
+    #numero2,
+    #numero3,
+    #numeroC,
+    #numero4,
+    #numero5,
+    #numero6,
+    #numeroDiv,
+    #numero7,
+    #numero8,
+    #numero9,
+    #numeroMulti,
+    #numero0,
+    #numeroIgual,
+    #numeroMais,
+    #numeroMenos {
+        border: 0.2rem #fffccb solid;
+        border-radius: 0.20rem;
+        background-color: #ffcfa2;
+        font-size: 2.2rem;
+    }
+
+    #numero1:hover,
+    #numero2:hover,
+    #numero3:hover,
+    #numeroC:hover,
+    #numero4:hover,
+    #numero5:hover,
+    #numero6:hover,
+    #numeroDiv:hover,
+    #numero7:hover,
+    #numero8:hover,
+    #numero9:hover,
+    #numeroMulti:hover,
+    #numero0:hover,
+    #numeroIgual:hover,
+    #numeroMais:hover,
+    #numeroMenos:hover {
+        cursor: pointer;
+        color: #ff9f8e;
+        transition: 0.3s;
+    }
+
+    #numero1:active,
+    #numero2:active,
+    #numero3:active,
+    #numeroC:active,
+    #numero4:active,
+    #numero5:active,
+    #numero6:active,
+    #numeroDiv:active,
+    #numero7:active,
+    #numero8:active,
+    #numero9:active,
+    #numeroMulti:active,
+    #numero0:active,
+    #numeroIgual:active,
+    #numeroMais:active,
+    #numeroMenos:active {
+        cursor: pointer;
+        background-color: #fffccb;
+        transition: none;
+        color: #ff9f8e;
+    }
+
+    .container-tabela {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 4.2rem;
+    }
+
+    td {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #fffccb;
+        width: 14.5rem;
+        height: 3rem;
+        border: 0.2rem #ffcfa2 solid;
+        font-size: 1.4rem;
+    }
+
+    tr {
+        display: flex;
+    }
+
+    .input-td {
+        background: none;
+        border: none;
+        font-size: 1.4rem;
+        padding-right: 0.5rem;
+    }
+
+    .input-td:hover {
+        cursor: pointer;
+        color: #ff9f8e;
+        transition: 0.3s;
+    }
+}
