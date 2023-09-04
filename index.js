@@ -97,7 +97,7 @@ const resultadoOperacao = () => {
     if (vericarOperacao() && verificarOperacaoUltimo() === false) {
         let dataHoras = new Date()
         let operacaoFeita = numerosConcatenados
-        mostrarHoraOperacao(dataHoras, operacaoFeita)
+        mostrarDadosOperacao(dataHoras, operacaoFeita)
         let resultado = eval(numerosConcatenados)
         document.getElementById("resultado").value = `${resultado}`
         numeros = resultado.toString().split("")
@@ -118,11 +118,11 @@ const mostrarOperacaoVisor = (idTd, idTr) => {
     arrayTr.splice(index, 1)
 }
 
-//Variáveis para fazer o controle de operações que vão ser mostradas
+//Variáveis para fazer o controle de operações que vão ser mostradas na tabela
 let contadorTabelas = 0
 let contadorId = 0
 let arrayTr = []
-const mostrarHoraOperacao = (dataHoras, operacaoFeita) => {
+const mostrarDadosOperacao = (dataHoras, operacaoFeita) => {
     /*
         Mostra a data, horas, minutos e segundos que a operação foi feita e 
         atualiza o HTML com a Tag contendo os ids e função para deixar dinâmico ao click e ao limite de operações "4"
